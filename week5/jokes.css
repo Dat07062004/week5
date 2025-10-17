@@ -1,0 +1,119 @@
+/* Reset và base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Style cho h1 */
+h1 {
+    width: 100vw; /* Chiều ngang hết màn hình */
+    height: 33.33vh; /* Chiều dọc 1/3 màn hình */
+    background: rgb(102, 23, 137); /* Màu nền tím đậm */
+    border: 3px solid #333; /* Khung đậm */
+    color: #ffffff; /* Chữ màu trắng đậm */
+    font-weight: bold; /* Chữ đậm */
+    font-size: 2.5rem; /* Kích thước chữ lớn */
+    text-align: center; /* Căn giữa chữ */
+    display: flex; /* Sử dụng flexbox */
+    align-items: center; /* Căn giữa theo chiều dọc */
+    justify-content: center; /* Căn giữa theo chiều ngang */
+    margin-left: calc(-50vw + 50%); /* Để h1 kéo dài hết màn hình */
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5); /* Đổ bóng chữ */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3); /* Đổ bóng khung */
+}
+
+/* Style cho header */
+header {
+    position: relative;
+    overflow: hidden;
+}
+
+/* Style cơ bản cho body */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+}
+
+/* Style cho navigation */
+nav {
+    background: #333;
+    padding: 1rem;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 1rem;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: #555;
+}
+
+/* Style cho main content */
+main {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    min-height: 400px;
+    padding: 2rem;
+}
+
+/* Style cho joke items */
+.joke-item {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    background-color: #f9f9f9;
+}
+
+.joke-content {
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.joke-image {
+    max-width: 30px;
+    max-height: 30px;
+    width: 30px;
+    height: 30px;
+    border-radius: 5px;
+    border: 2px solid #ccc;
+    flex-shrink: 0;
+}
+
+.joke-text {
+    flex: 1;
+    font-size: 1.1rem;
+    line-height: 1.5;
+    margin: 0;
+}
+
+/* Style cho footer */
+footer {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+}
